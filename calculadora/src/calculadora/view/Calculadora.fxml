@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.control.CalculadoraController">
+   <children>
+      <TableView layoutX="439.0" layoutY="90.0" prefHeight="243.0" prefWidth="402.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Número 1" />
+          <TableColumn prefWidth="96.0" text="Número 2" />
+            <TableColumn prefWidth="96.0" text="Operação" />
+            <TableColumn prefWidth="134.0" text="Resultado" />
+        </columns>
+      </TableView>
+      <Label layoutX="96.0" layoutY="90.0" text="Número 1" />
+      <TextField fx:id="txtNum1" layoutX="96.0" layoutY="107.0" prefHeight="25.0" prefWidth="211.0" />
+      <TextField fx:id="txtNum2" layoutX="96.0" layoutY="159.0" prefHeight="25.0" prefWidth="211.0" />
+      <Label layoutX="96.0" layoutY="142.0" text="Número 2" />
+      <Label layoutX="96.0" layoutY="280.0" text="Resultado" />
+      <TextField fx:id="txtResultado" editable="false" layoutX="96.0" layoutY="297.0" prefHeight="25.0" prefWidth="211.0" />
+      <Button fx:id="btnMult" layoutX="96.0" layoutY="199.0" mnemonicParsing="false" onAction="#multiplicacao" prefHeight="25.0" prefWidth="101.0" text="Multiplicação" />
+      <Button fx:id="btnSoma" layoutX="96.0" layoutY="237.0" mnemonicParsing="false" onAction="#soma" prefHeight="25.0" prefWidth="101.0" text="Soma" />
+      <Button fx:id="btnDiv" layoutX="205.0" layoutY="199.0" mnemonicParsing="false" onAction="#divisao" prefHeight="25.0" prefWidth="101.0" text="Divisão" />
+      <Button fx:id="btnSub" layoutX="205.0" layoutY="237.0" mnemonicParsing="false" onAction="#subtracao" prefHeight="25.0" prefWidth="101.0" text="Subtração" />
+      <Label layoutX="143.0" layoutY="32.0" text="Calculadora">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="599.0" layoutY="32.0" text="Histórico">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSair" layoutX="759.0" layoutY="358.0" mnemonicParsing="false" onAction="#sair" prefHeight="25.0" prefWidth="83.0" text="Sair" />
+   </children>
+</AnchorPane>

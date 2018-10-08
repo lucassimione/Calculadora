@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="calculadora.control.CadastrarUsuarioController">
+   <children>
+      <Button fx:id="btnCadastro" layoutX="373.0" layoutY="254.0" mnemonicParsing="false" onAction="#cadastro" text="Cadastrar" />
+      <Label layoutX="232.0" layoutY="67.0" text="Cadastrar-se">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="514.0" layoutY="361.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="72.0" text="Voltar" />
+      <TextField fx:id="txtSenha" layoutX="180.0" layoutY="202.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="180.0" layoutY="185.0" text="Senha" />
+      <Label layoutX="180.0" layoutY="128.0" text="Usuário" />
+      <TextField fx:id="txtUsuario" layoutX="180.0" layoutY="145.0" prefHeight="25.0" prefWidth="260.0" />
+   </children>
+</AnchorPane>
