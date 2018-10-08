@@ -43,7 +43,7 @@ public class CadastrarUsuarioController implements Initializable {
 
     @FXML
     private void cadastro(ActionEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("esteticaVoceBonita");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
         EntityManager em = emf.createEntityManager();
         
         usuario u = null;

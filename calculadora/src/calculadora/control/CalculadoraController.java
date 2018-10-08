@@ -64,7 +64,11 @@ public class CalculadoraController implements Initializable {
         Double num2 = Double.parseDouble(txtNum2.getText());
         Double result = num1*num2;
         
-        txtResultado.setText(result.toString());    
+        txtResultado.setText(result.toString());  
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
+        EntityManager em = emf.createEntityManager();
+        
     }
 
     @FXML
