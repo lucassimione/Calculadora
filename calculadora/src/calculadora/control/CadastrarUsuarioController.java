@@ -46,7 +46,7 @@ public class CadastrarUsuarioController implements Initializable {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
         EntityManager em = emf.createEntityManager();
         
-        usuario u = null;
+        usuario u = new usuario();
         u.setUsuario(txtUsuario.getText());
         u.setSenha(txtSenha.getText());
        

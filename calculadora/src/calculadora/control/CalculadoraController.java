@@ -69,6 +69,11 @@ public class CalculadoraController implements Initializable {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
         EntityManager em = emf.createEntityManager();
         
+        historico h = new historico();
+        
+        h.setPrimeiroValor(Double.parseDouble(txtNum1.getText()));
+        h.setSegundoValor(Double.parseDouble(txtNum2.getText()));
+        h.setResultado(Double.parseDouble(txtResultado.getText()));    
     }
 
     @FXML
@@ -78,6 +83,15 @@ public class CalculadoraController implements Initializable {
         Double result = num1+num2;
         
         txtResultado.setText(result.toString());
+        
+                EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
+        EntityManager em = emf.createEntityManager();
+        
+        historico h = new historico();
+        
+        h.setPrimeiroValor(Double.parseDouble(txtNum1.getText()));
+        h.setSegundoValor(Double.parseDouble(txtNum2.getText()));
+        h.setResultado(Double.parseDouble(txtResultado.getText()));   
     }
 
     @FXML
@@ -96,6 +110,15 @@ public class CalculadoraController implements Initializable {
         Double result = num1-num2;
         
         txtResultado.setText(result.toString());
+        
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("calculadora");
+        EntityManager em = emf.createEntityManager();
+        
+        historico h = new historico();
+        
+        h.setPrimeiroValor(Double.parseDouble(txtNum1.getText()));
+        h.setSegundoValor(Double.parseDouble(txtNum2.getText()));
+        h.setResultado(Double.parseDouble(txtResultado.getText()));   
     }
 
     @FXML
